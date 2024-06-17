@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Notifications</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div id="profile-1" class="profile">
+            <img src="https://100dayscss.com/codepen/13-1.jpg" />
+            <div class="overlay"></div>
+            <div class="plus">
+                <p>+</p>
+            </div>
+        </div>
+        <div id="profile-2" class="profile">
+            <img src="https://100dayscss.com/codepen/13-2.jpg" />
+            <div class="overlay"></div>
+            <div class="plus">
+                <p>+</p>
+            </div>
+        </div>
+        <div id="profile-3" class="profile">
+            <img src="https://100dayscss.com/codepen/13-3.jpg" />
+            <div class="overlay"></div>
+            <div class="plus">
+                <p>+</p>
+            </div>
+        </div>
+        <div id="profile-4" class="profile">
+            <img src="https://100dayscss.com/codepen/13-4.jpg" />
+            <div class="overlay"></div>
+            <div class="plus">
+                <p>+</p>
+            </div>
+        </div>
+        <div id="detail-1" class="detail">
+            <div class="close">x</div>
+            <img class="header" src="https://100dayscss.com/codepen/13-1-header.jpg" />
+            <div class="image">
+                <img src="https://100dayscss.com/codepen/13-1.jpg" />
+            </div>
+            <div class="infos">
+                <div class="name">Julia Toth</div>
+                <div class="action">
+                    <div class="btn">
+                        <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="btn">
+                        <span class="fa fa-comment"></span>
+                    </div>
+                    <div class="btn">
+                        <span class="fa fa-heart"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    document.querySelector('.profile').addEventListener('click', function () {
+        document.querySelector('.detail').classList.add('active');
+    });
+
+    document.querySelector('.close').addEventListener('click', function () {
+        document.querySelector('.detail').classList.remove('active');
+    });
+
+</script>
+
+</html>
